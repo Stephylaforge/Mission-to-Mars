@@ -14,11 +14,11 @@ def scrape_all():
 
 # Run all scraping functions and store results in dictionary
 data = {
-      "news_title": news_title,
-      "news_paragraph": news_paragraph,
-      "featured_image": featured_image(browser),
-      "facts": mars_facts(),
-      "last_modified": dt.datetime.now()
+"news_title": news_title,
+"news_paragraph": news_paragraph,
+"featured_image": featured_image(browser),
+"facts": mars_facts(),
+"last_modified": dt.datetime.now()
 }
 
 # Stop webdriver and return data
@@ -112,9 +112,9 @@ def hemisphere_images(browser):
 
    # 3. Write code to retrieve the image urls and titles for each hemisphere.
 
-# Results returned as an iterable list
-hemi_images = img_soup.find_all('div', class_='item')
-img_soup = soup(html, 'html.parser')
+    # Results returned as an iterable list
+    hemi_images = img_soup.find_all('div', class_='item')
+    img_soup = soup(html, 'html.parser')
     # Loop through returned results
     for hemi in hemi_images:
         try:
